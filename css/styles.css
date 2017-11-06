@@ -295,8 +295,7 @@ h6 {
 			.info-setting .content-info p {
 				font-size: 24px;
 				text-align: center;
-				width: 100%;
-				float: left;
+				margin-top: 25px;
 			}
 			.info-setting-left {
 				width: 45%;
@@ -305,18 +304,23 @@ h6 {
 				padding-right: 20px;
 			}
 				.info-setting-left .content-info {
-					padding: 40px 10px;
+					padding: 50px 10px;
 					border-bottom: 1px solid;
 					float: left;
+					position: relative;
+					margin: 0 auto;
 				}
 					.info-setting .content-info i {
 						float: left;
 						width: 50px;
 						height: 50px;
 						background-repeat: no-repeat;
-						position: relative;
-						top: 0;
-						left: 60px;
+						position: absolute;
+						top: -47px;
+						left: 0;
+						bottom: 0;
+						right: 0;
+						margin: auto;
 					}
 						i.upload {
 							background-image: url(../image/icon-upload.png);
@@ -344,9 +348,11 @@ h6 {
 				float: right;
 			}
 			 .info-setting-right .content-info {
-					padding: 40px 7px;
+					padding: 50px 11px;
 					border-bottom: 1px solid;
 					float: left;
+					position: relative;
+					margin: 0 auto;
 				}
 				.info-setting-right .content-info.last {
 					border-bottom: none;
