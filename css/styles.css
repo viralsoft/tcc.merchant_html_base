@@ -38,6 +38,12 @@ h5 {
     font-size: 22px;
     font-weight: normal;
 }
+h6 {
+	font-size: 41px;
+	color: #4257a4;
+	text-align: center;
+	font-weight: normal;
+}
 
 /* 2. Main 
 =============*/
@@ -94,7 +100,7 @@ h5 {
 	overflow: hidden;
 }
 	.container-left {
-		width: 56%;
+		width: 55%;
 		float: left;
 		padding: 50px 0 0 60px;
 	}
@@ -124,7 +130,7 @@ h5 {
 .staf2 {
 	background: #fff;
 	box-shadow: 0px 0px 1px 1px #ccc;
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -137,7 +143,7 @@ h5 {
 	}
 	.staf2 .content-staf2 .grid1 {
 		float: left;
-		padding: 15px 40px;
+		padding: 15px 9px;
 	}
 	.staf2 .content-staf2 .grid1 i {
 		float: left;
@@ -181,16 +187,17 @@ h5 {
 		padding: 180px 40px 50px 40px;
 		border-bottom: 1px solid #ccc;
 	}
-	.sigup button.btn {
+	.button-app {
+		width: 51%;
+		margin: 0 auto;
+	}
+	.sigup .button-app button.btn {
 		color: #fff;
 		border: none;
 		background-color: #4257a4;
 		font-size: 28px;
 		padding: 9px 16px;
 		border-radius: 5px;
-		margin-top: 15px;
-		margin-left: 130px;
-		margin-bottom: 15px;
 		font-family: 'Gill Sans MT';
 	}
 	.container-right .sigup p {
@@ -201,20 +208,17 @@ h5 {
 		margin-top: 50px;
 	}
 		.login .download-app {
-			width: 58%;
-			padding: 15px 40px;
+			width: 59%;
+			padding: 15px 0;
 			margin: 0 auto;
 		}
-		.login button.btn {
+		.login .button-app button.btn {
 			color: #fff;
 			border: none;
 			background-color: #4257a4;
 			font-size: 28px;
 			padding: 9px 107px;
 			border-radius: 5px;
-			margin-top: 15px;
-			margin-left: 155px;
-			margin-bottom: 15px;
 		}
 		.login .download {
 			padding: 120px 0 0;
@@ -224,7 +228,7 @@ h5 {
 			width: 161px;
 			height: 54px;
 			background-repeat: no-repeat;
-			margin: 0 10px 0 0;
+			margin: 0 5px 0 0;
 		}
 		i.app-ios {
 			background-image: url(../image/icon-app-ios.png);
@@ -238,6 +242,123 @@ h5 {
 		float: left;
 		padding: 10px;
 	}
-
+.step-merchant {
+	margin-top: 80px;
+}
+	.step-merchant .steps {
+		width: 76%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+		ul.steps li {
+			list-style: none;
+		}
+			ul.steps li i {
+				float: left;
+				width: 180px;
+				height: 56px;
+				background-repeat: no-repeat;
+				margin: 20px 15px 20px 0;
+			}
+			i.icon-step1 {
+				background-image: url(../image/step1.png);
+			}
+			i.icon-step2 {
+				background-image: url(../image/step2.png);
+			}
+			i.icon-step3 {
+				background-image: url(../image/step3.png);
+			}
+		.step-merchant .staf2 {
+			box-shadow: inherit;
+		}	
+			.step-merchant .staf2 .content-staf2 {
+				padding: 40px;
+			}
+	.container-right .info {
+		width: 77%;
+		margin: 0 auto;
+		padding-top: 60px;
+	}
+	.container-right.register {
+		box-shadow: inherit;
+	}
+		.container-right .info-setting {
+			width: 100%;
+			margin : 0 auto;
+			overflow: hidden;
+			margin-top: 50px;
+		}	
+			.info-setting .content-info {
+				width: 80%;
+			}
+			.info-setting .content-info p {
+				font-size: 24px;
+				text-align: center;
+				width: 100%;
+				float: left;
+			}
+			.info-setting-left {
+				width: 45%;
+				float: left;
+				border-right: 1px solid;
+				padding-right: 20px;
+			}
+				.info-setting-left .content-info {
+					padding: 40px 10px;
+					border-bottom: 1px solid;
+					float: left;
+				}
+					.info-setting .content-info i {
+						float: left;
+						width: 50px;
+						height: 50px;
+						background-repeat: no-repeat;
+						position: relative;
+						top: 0;
+						left: 60px;
+					}
+						i.upload {
+							background-image: url(../image/icon-upload.png);
+						}
+						i.plan {
+							background-image: url(../image/icon-plan.png);
+						}
+						i.support {
+							background-image: url(../image/icon-support.png);
+						}
+						i.manage {
+							background-image: url(../image/icon-account.png);
+						}
+						i.trade {
+							background-image: url(../image/icon-trade.png);
+						}
+						i.setting {
+							background-image: url(../image/icon-setting.png);
+						}
+						.info-setting-left .content-info.last {
+						border-bottom: none;
+					}	
+			.info-setting-right {
+				width: 45%;
+				float: right;
+			}
+			 .info-setting-right .content-info {
+					padding: 40px 7px;
+					border-bottom: 1px solid;
+					float: left;
+				}
+				.info-setting-right .content-info.last {
+					border-bottom: none;
+				}
+	.container-right.register .login {
+		margin-top: 30px;
+	}
+		.container-right.register .login .download {
+			padding: 0
+		}
+	.about.register {
+		margin-top: 175px;
+	}
 /* 3. Footer 
 =============*/
