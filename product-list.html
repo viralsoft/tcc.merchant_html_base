@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="page home-page">
+      <!-- Main Navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
+                  <div class="brand-text brand-big"><img src="img/logo.png" /></div>
+                  <div class="brand-text brand-small"><img src="img/logo.png" /></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu -->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Account -->
+                <li class="nav-item dropdown accounttop"> <a id="accounts" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">
+                  <div class="accountimg"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                  <div class="accountdetail">
+                    <span class="accountname">Mark Stephen</span>
+                    <span class="accountpland">Basic Plan, Upgrade Plan</span>
+                  </div>
+                </a>
+                  <ul aria-labelledby="accounts" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-envelope bg-blue"></i>My Profile</div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-info-circle bg-blue"></i>Help</div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-sign-out bg-blue"></i>Log Out</div>
+                        </div></a></li>
+                  </ul>
+                </li>
+                <!-- Notifications-->
+                <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o"></i><span class="badge bg-red">12</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-shopping-cart bg-blue"></i>You have 6 New Order </div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-drivers-license-o bg-orange"></i>You have 2 Contact Request</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-tags bg-red"></i>You have 2 Quotation Request</div>
+                          <div class="notification-time"><small>10 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>view all notifications                                            </strong></a></li>
+                  </ul>
+                </li>
+                <!-- Messages                        -->
+                <li class="nav-item dropdown"> <a id="messages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-comments"></i><span class="badge bg-red">10</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                        <div class="msg-profile"> <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-body">
+                          <h3 class="h5">Jason Doe</h3><span>Sent You Message</span>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                        <div class="msg-profile"> <img src="img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-body">
+                          <h3 class="h5">Frank Williams</h3><span>Sent You Message</span>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                        <div class="msg-profile"> <img src="img/avatar-3.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-body">
+                          <h3 class="h5">Ashley Wood</h3><span>Sent You Message</span>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>Read all messages    </strong></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="page-content d-flex align-items-stretch">
+        <!-- Side Navbar -->
+        <nav class="side-navbar">
+          <!-- Sidebar Header-->
+          <div class="sidebar-header d-flex align-items-center">
+            <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+            <div class="title">
+              <p>Hello,</p>
+              <h1 class="h4">Mark Stephen</h1>
+              <p>Basic Plan, <a href="">Upgrade Plan</a></p>
+            </div>
+          </div>
+          <div class="viewsitebox">
+            <a href="" class="viewsite"><i class="fa fa-globe"></i>View Store</a>
+          </div>
+          <!-- Sidebar Navidation Menus--><span class="heading"></span>
+          <ul class="list-unstyled">
+            <li class="active"> <a href="index.html"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+            <li> <a href="tables.html"> <i class="fa fa-cube"></i>Product</a></li>
+            <li> <a href="charts.html"> <i class="fa fa-shopping-cart"></i>Order</a></li>
+            <li> <a href="forms.html"> <i class="fa fa-tags"></i>Quotes</a></li>
+            <li> <a href="login.html"> <i class="fa fa-drivers-license-o"></i>Contact</a></li>
+            <li> <a href="tables.html"> <i class="fa fa-calculator"></i>Currency Converter</a></li>
+            <li> <a href="charts.html"> <i class="fa fa-bullhorn"></i>Trade Service</a></li>
+            <li> <a href="forms.html"> <i class="fa fa-info-circle"></i>Help</a></li>
+            <li> <a href="login.html"> <i class="fa fa-cog"></i>Setting</a></li>
+          </ul>
+        </nav>
+        <div class="content-inner">
+          <!-- Product list -->
+            <div class="container-fluid">
+                <div class="card product-list">
+                    <div class="header-page">
+                        <div class="row">
+                            <div class="col-6 col-sm-5 col-md-4 col-lg-4 col-xl-4">
+                                <h2><i class="fa fa-cube"></i> Manage Product</h2>
+                            </div>
+                            <div class="col-6 col-sm-7 col-md-8 col-lg-8 col-xl-8">
+                                <div class="dropdown">
+                                    <button class="btn btn-link" id="moreOption" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More <i class="fa fa-angle-down"></i></button>
+                                    <ul class="dropdown-menu" aria-labelledby="moreOption">
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li>
+                                    </ul>
+                                </div><!-- /.dropdown -->
+                                <div class="search">
+                                    <div class="search-form">
+                                        <div class="inner">
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-dark">Search</button>
+                                    <button class="btn btn-secondary">Clear</button>
+                                    <button class="btn btn-link"><i class="fa fa-search"></i></button>
+                                </div><!-- /.search -->
+                            </div>
+                        </div>
+                    </div><!-- /.header-page -->
+
+                    <ul class="nav nav-tabs tabs-product" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="home" aria-selected="true">All(0)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="approved-tab" data-toggle="tab" href="#approved" role="tab" aria-controls="profile" aria-selected="false">Approved(0)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="editing-required-tab" data-toggle="tab" href="#editing-required" role="tab" aria-controls="contact" aria-selected="false">Editing Required(0)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="approved-pending-tab" data-toggle="tab" href="#approved-pending" role="tab" aria-controls="contact" aria-selected="false">Approval Pending(0)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="draft-tab" data-toggle="tab" href="#draft" role="tab" aria-controls="contact" aria-selected="false">Draft(0)</a>
+                        </li>
+                    </ul>
+
+                    <div class="function-tabs text-right">
+                        <button class="btn btn-danger">Delete Product</button>
+                        <button class="btn btn-dark">Disable Product</button>
+                    </div><!-- /.function-tabs -->
+
+                    <div class="tab-content tab-content-product" id="myTabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </th>
+                                        <th>Products</th>
+                                        <th><div class="hidden-mobile">Price</div></th>
+                                        <th class="hidden-mobile">Last Updated</th>
+                                        <th class="hidden-mobile">Status</th>
+                                        <th class="hidden-mobile">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="custom-control">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <i class="fa"></i>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            2017 New Styes False Fur Material Reusable Mink Eye Lashes
+                                            <div class="status pending visible-mobile">
+                                                <i></i>Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            ฿1,000-1,600
+                                            <div class="visible-mobile">
+                                                <a href="#">Edit</a>
+                                            </div>
+                                        </td>
+                                        <td class="hidden-mobile">22/09/2017</td>
+                                        <td class="hidden-mobile">Pending</td>
+                                        <td class="hidden-mobile"><a href="#">Edit</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="info-table">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination pull-right">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <i class="fa fa-angle-double-left"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <i class="fa fa-angle-double-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="number-paging">
+                                            Items per page: <a href="#" class="active">10</a> | <a href="#">30</a> | <a href="#">50</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /#all -->
+
+                        <div class="tab-pane fade" id="approved" role="tabpanel" aria-labelledby="approved-tab">approved</div>
+                        <div class="tab-pane fade" id="editing-required" role="tabpanel" aria-labelledby="editing-required-tab">editing-required</div>
+                        <div class="tab-pane fade" id="approved-pending" role="tabpanel" aria-labelledby="approved-pending-tab">approved-pending</div>
+                        <div class="tab-pane fade" id="draft" role="tabpanel" aria-labelledby="draft-tab">draft</div>
+                    </div><!-- /.tab-content -->
+                </div>
+            </div>
+          <!-- e: Product list -->
+          <!-- Page Footer-->
+          <footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                  Product Listing Policy - Intellectual Property Protection - Privacy Policy - Terms of Use
+                  <br/>&copy; 1999-2017 Domain.com. All rights reserved.
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript files-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="js/front.js"></script>
+  </body>
+</html>
