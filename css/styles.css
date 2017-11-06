@@ -34,15 +34,15 @@ h4 {
 	text-align: center;
 }
 h5 {
-	  text-align: center;
-    font-size: 22px;
+	  text-align: center!important;
+    font-size: 22px!important;
     font-weight: normal;
 }
 h6 {
-	font-size: 41px;
-	color: #4257a4;
-	text-align: center;
-	font-weight: normal;
+	font-size: 34px!important;
+	color: #4257a4!important;
+	text-align: center!important;
+	font-weight: normal!important;
 }
 
 /* 2. Main 
@@ -130,7 +130,7 @@ h6 {
 .staf2 {
 	background: #fff;
 	box-shadow: 0px 0px 1px 1px #ccc;
-	width: 85%;
+	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -161,13 +161,13 @@ h6 {
 		background-image: url(../image/img-account.png);
 	}
 	.staf2 .content-staf2 p {
-		font-size: 24px;
+		font-size: 21px;
 		color: #57585b;
 		float: left;
 		margin-left: 15px;
 	}
 .about {
-	width: 74%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 30px 8px;
 }
@@ -208,7 +208,7 @@ h6 {
 		margin-top: 50px;
 	}
 		.login .download-app {
-			width: 59%;
+			width: 100%;
 			padding: 15px 0;
 			margin: 0 auto;
 		}
@@ -237,16 +237,15 @@ h6 {
 			background-image: url(../image/icon-app-androi.png);
 		}
 	.login p {
-		font-size: 20px;
-		text-align: center;
+		font-size: 18px;
 		float: left;
-		padding: 10px;
+		padding: 10px 0;
 	}
 .step-merchant {
 	margin-top: 80px;
 }
 	.step-merchant .steps {
-		width: 76%;
+		width: 82%;
 		margin: 0 auto;
 		overflow: hidden;
 	}
@@ -293,7 +292,7 @@ h6 {
 				width: 90%;
 			}
 			.info-setting .content-info p {
-				font-size: 24px;
+				font-size: 18px;
 				text-align: center;
 				margin-top: 25px;
 			}
@@ -304,7 +303,7 @@ h6 {
 				padding-right: 20px;
 			}
 				.info-setting-left .content-info {
-					padding: 50px 10px;
+					padding: 50px 0px;
 					border-bottom: 1px solid;
 					float: left;
 					position: relative;
@@ -348,7 +347,7 @@ h6 {
 				float: right;
 			}
 			 .info-setting-right .content-info {
-					padding: 50px 11px;
+					padding: 50px 0;
 					border-bottom: 1px solid;
 					float: left;
 					position: relative;
@@ -364,7 +363,7 @@ h6 {
 			padding: 0
 		}
 	.about.register {
-		margin-top: 175px;
+		margin-top: 130px;
 	}
 /* 3. Footer 
 =============*/
