@@ -1,0 +1,243 @@
+/* 1. Default
+=============*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 14px;
+	color: #57585b;
+	font-family: 'Gill Sans MT';
+}
+h1 {
+	font-size: 34px;
+	color: #221f1f;
+	font-weight: normal;
+	text-align: center;
+}
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+h3 {
+	font-size: 34px;
+	color: #221f1f;
+	font-weight: normal;
+	text-align: center;
+}
+h4 {
+	font-size: 25px;
+	color: #221f1f;
+	font-weight: normal;
+	text-align: center;
+}
+h5 {
+	  text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+/* 2. Main 
+=============*/
+.page {
+	background-color: #e8e8e8;
+}
+.menu {
+	background-color: #fff;
+	float: left;
+	width: 100%;
+	box-shadow: 0px 1px 1px 1px #ccc;
+}
+	.menu-son {
+		padding: 14px 45px 14px 80px;
+		overflow: hidden;
+	}
+	.logo {
+		float: left;
+		width: 10%;
+	}
+	i.logo-page {
+		background-image: url(../image/logo.png);
+		float: left;
+		width: 100%;
+		height: 41px;
+		background-repeat: no-repeat;
+	}
+	.menu-son .right {
+		float: right;
+	}
+		ul.menu-nav li {
+			list-style: none;
+			display: inline-block;
+			padding: 0 10px;
+		}
+			ul.menu-nav li a {
+				text-decoration: none;
+				color: #57585b;
+			}
+		i.menu-ticker {
+			float: right;
+			background-image: url(../image/img-ticket-menu.png);
+			width: 10px;
+			height: 10px;
+			background-repeat: no-repeat;
+			position: relative;
+			top: 7px;
+			right: -10px;
+		}
+.container {
+	background: #f6f7fb;
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+	.container-left {
+		width: 56%;
+		float: left;
+		padding: 50px 0 0 60px;
+	}
+.staf1 {width: 80%;margin: 0 auto;margin-bottom: 50px;}
+	.staf1 .grid {
+		display: inline-block;
+		width: 35%;
+		margin: 50px 20px 0 0;
+	}
+	.staf1 .grid img {
+		position: relative;
+		top: 0;
+		margin-bottom: 30px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+	.staf1 .grid.first {
+		width: 28%;
+	}
+	.staf1 .grid.last {
+		margin-right: 0;
+		width: 29%;
+		float: right;
+	}
+.staf2 {
+	background: #fff;
+	box-shadow: 0px 0px 1px 1px #ccc;
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+	.staf2 .content-staf2 {
+		padding: 50px 40px;
+		float: left;
+	}
+	.staf2 .content-staf2 h3 {
+		margin-bottom: 20px;
+	}
+	.staf2 .content-staf2 .grid1 {
+		float: left;
+		padding: 15px 40px;
+	}
+	.staf2 .content-staf2 .grid1 i {
+		float: left;
+		width: 70px;
+		height: 50px;
+		background-repeat: no-repeat;
+	}
+	i.step1 {
+		background-image: url(../image/img-email.png);
+	}
+	i.step2 {
+		background-image: url(../image/img-infomation.png);
+	}
+	i.step3 {
+		background-image: url(../image/img-account.png);
+	}
+	.staf2 .content-staf2 p {
+		font-size: 24px;
+		color: #57585b;
+		float: left;
+		margin-left: 15px;
+	}
+.about {
+	width: 74%;
+	margin: 0 auto;
+	padding: 30px 8px;
+}
+	.about p {
+		font-size: 21px;
+		color: #000;
+		text-align: center;
+	}
+.container-right {
+	    width: 38%;
+	    float: right;
+	    background-color: #fff;
+	    box-shadow: 0px -5px 3px 2px #ccc;
+	    padding: 0px 24px 14px;
+}
+	.container-right .sigup {
+		padding: 180px 40px 50px 40px;
+		border-bottom: 1px solid #ccc;
+	}
+	.sigup button.btn {
+		color: #fff;
+		border: none;
+		background-color: #4257a4;
+		font-size: 28px;
+		padding: 9px 16px;
+		border-radius: 5px;
+		margin-top: 15px;
+		margin-left: 175px;
+		margin-bottom: 15px;
+		font-family: 'Gill Sans MT';
+	}
+	.container-right .sigup p {
+		font-size: 20px;
+		text-align: center;
+	}
+	.login {
+		margin-top: 50px;
+	}
+		.login .download-app {
+			width: 50%;
+			padding: 15px 40px;
+			margin: 0 auto;
+		}
+		.login button.btn {
+			color: #fff;
+			border: none;
+			background-color: #4257a4;
+			font-size: 28px;
+			padding: 9px 107px;
+			border-radius: 5px;
+			margin-top: 15px;
+			margin-left: 200px;
+			margin-bottom: 15px;
+		}
+		.login .download {
+			padding: 120px 0 0;
+		}
+		.login .download i {
+			float: left;
+			width: 161px;
+			height: 54px;
+			background-repeat: no-repeat;
+			margin: 0 10px 0 0;
+		}
+		i.app-ios {
+			background-image: url(../image/icon-app-ios.png);
+		}
+		i.app-androi {
+			background-image: url(../image/icon-app-androi.png);
+		}
+	.login p {
+		font-size: 20px;
+		text-align: center;
+		float: left;
+		padding: 10px;
+	}
+
+/* 3. Footer 
+=============*/
