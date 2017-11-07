@@ -46,7 +46,7 @@
 	}
 
 	/* 2. Main 
-	=============*/
+	=============*/ 
 	.page {
 		background-color: #e8e8e8;
 		font-family: 'Gill Sans MT !important';
@@ -380,6 +380,7 @@
 			width: 100%;
 			position: relative;
 			margin: 0 auto;
+			float: left;
 		}
 		.menu-son.right .user-account p {
 			font-size: 14px;
@@ -596,8 +597,8 @@
 								width: 10px;
 								height: 10px;
 								position: absolute;
-								top: 15px;
-								right: 40px;
+								top: 10px;
+								right: 0;
 								background-repeat: no-repeat;
 							}
 		.delete-product {
@@ -692,5 +693,110 @@
 				float: left;
 				margin: 20px 0;
 			}
+
 	/* 3. Footer 
 	=============*/
+/* 4. Responsive 
+==============*/
+@media (min-width: 320px) {
+	.menu-son.product .logo i.logo-page {
+		width: 100%;
+	}
+	.menu-son.product .logo i.icon-page {
+		background-image: none;
+	}
+}
+@media (min-width: 768px) {
+	.title-mess {
+		display: none;
+	}
+	.manage-product ul.list-mess li {
+		width: 23%;
+	}
+	.menu-son.product .logo i.logo-page {
+		width: 34%;
+	}
+	.menu-son.right .user-account .welcome-user {
+		width: 82%;
+	}
+	.menu-son.right .user-account .welcome-user i.icon-ticket {
+		right: 50px;
+	}
+	.menu-son.product .logo i.icon-page {
+		background-image: none;
+	}
+	ul.task-menu li.active {
+		width: 100%;
+	}
+}
+@media (max-width: 768px) {
+	p.edit {
+		text-decoration: underline #ccc;
+	}
+	p.pending {
+		padding-left: 30px;
+	}
+		p.pending i {
+			background-repeat: no-repeat;
+			background-image: url(../image/icon-check-tick.png);
+			float: left;
+			width: 12px;
+			height: 11px;
+			position: relative;
+			top: 5px;
+			right: 3px;
+		}
+	.title-product-mess {
+		border-bottom: 1px solid #ccc;
+	}
+	.title-mess {
+		display: none;
+	}
+	.search-manage a.search-view {
+		display: none;
+	}
+	.search-manage input.search-button-manage {
+		display: none;
+	}
+	
+	.search-manage i.tool-search {
+	 	top: 5px;
+	 	right: 70px;
+	 	left: inherit;
+	}
+	.search-manage a.more {
+		float: right;
+	}
+	.manage-product ul.list-mess li {
+		width: 23%;	
+		padding: 15px 3px 15px 2px;
+	}
+	.list-page .items-page p {
+		text-align: center;
+	}
+	.button-next-pre-page {
+		width: 27%;
+		margin: 0 auto;
+	}
+	.items-page {
+		position: relative;
+		top: 60px;
+	}
+}
+@media (min-width: 992px) {
+	.title-mess {
+		display: block;
+	}
+	.menu-son.product .logo i.icon-page {
+		background-image: url(../image/icon-page.png)!important;
+	}
+	.menu-son.product .logo i.logo-page {
+		width: 26%;
+	}
+}
+@media (min-width: 1200px) {
+	.manage-product ul.list-mess li {
+		width: 13%;
+	}
+	
+}
